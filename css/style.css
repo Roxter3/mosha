@@ -110,7 +110,7 @@ h3 {
   align-items: center;
   text-align: center;
   padding: 10px;
-  transition: transform 0.3s, backgound 0.3s; /*TIEMPO QUE DURA EFECTO*/
+  transition: transform 0.3s, background 0.3s; /* corregido */
 }
 
 /*EFECTO AL PASAR EL MOUSE*/
@@ -131,52 +131,89 @@ h3 {
   font-weight: bold;
 }
 
-/*TEXTO DESCRIPTIVO*/
+/*TEXTO DESCRIPTIVO DE TARJETA*/
 .card p {
   font-size: 14px;
   color: #555;
 }
 
+/*RESPONSIVE PARA MOVIL*/
 @media (max-width: 700px) {
-  body{
-    padding: 10px;
+  body {
+    padding: 0;
+    margin: 0;
+    background: #ffefda;
   }
 
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  nav a {
+    font-size: 1.1em;
+    margin: 0 10px;
+    padding: 8px 0;
+    display: inline-block;
+  }
+  
+  section {
+    height: auto;
+    min-height: 60vh;
+    padding: 30px 0 10px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+
   .inicio-container{
-    gap: 20px; /* reduce el espacio entre la imagen y el texto */ 
-    padding-top: 20px; /* espacio arriba para la barra*/
+    gap: 10px; /* reduce el espacio entre la imagen y el texto */ 
+    padding-top: 10px; /* espacio arriba para la barra*/
   }
 
   .circle {
-    width: 170px;
-    height: 180px;
-    margin-top: 10px; /* espacio arriba para la barra*/
+    width: 140px;
+    height: 140px;
+    margin-top: 60px; /* espacio arriba para la barra*/
   }
 
   /*centrar titulo de aventuras*/
   .inicio-container h1 {
-    font-size: 1.3em; /* reduce el tamaño del título */
+    font-size: 1.2em; /* reduce el tamaño del título */
     padding: 0 10px; /* espacio a los lados */
     text-align: center;
-    font-family: 'Merriweather', serif;
+    margin-top: 0;
+    font-family: serif;
   }
 
   .inicio-container h3 {
     font-size: 1em; /* reduce el tamaño del título */
     padding: 0 10px; /* espacio a los lados */
     text-align: center;
+    margin-top: 0;
   }
   .cards-container {
     flex-direction: column;
     align-items: center;
     gap: 35px;
+    margin: 20px 0; /* espacio arriba y abajo */
   }
 
   .card {
     width: 80vw; /* ocupa el 80% del ancho de la pantalla */
     min-width: 200px; /* ancho mínimo para que no se vea muy pequeño */
     max-width: 250px; /* ancho máximo para que no se vea muy grande */
-    height: auto; /* altura automática para ajustarse al contenido */
+    margin: 0 auto; /* centra la tarjeta */
   }
 
   section{
