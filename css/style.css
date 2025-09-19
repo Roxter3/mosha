@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+nav {
+  background-color: #ffffff; /* color cálido */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  position: fixed; /* siempre arriba */
+  top: 0;
+  width: 100%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  color: #9c9c9c;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/*COLOR AL PASAR EL MOUSE POR LA BARRA*/
+nav a:hover {
+  color: #ffb444d7;
+}
+
+/* Para que el contenido no quede debajo de la barra */
+section {
+  height: 100vh; /* ocupa toda la altura de la pantalla */
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
+}
+
+#inicio {
+  background: #ffefda;
+}
+#aventuras {
+  background: #ffefda;
+}
+#familia {
+  background: #ffefda;
+}
+#sobremoshita {
+  background: #ffefda;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  border: 8px solid #ffefda;
+  border-radius: 50%;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 2);
+}
+
+/*IMAGEN DENTRO DEL CIRCULO*/
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*CONTENDOR PARA CENTRAR LA IMAGEN Y EL TEXTO EN COLUMNA*/
+.inicio-container {
+  display: flex;
+  flex-direction: column; /* apila elementos en columna */
+  align-items: center; /* centra horizontalmente */
+  gap: 30px; /* espacio entre la imagen y el texto */
+}
+
+.inicio-container h1 {
+  margin-bottom: 0;
+}
+.inicio-container h3 {
+  margin-bottom: 0;
+}
+
+/*TEXTO DE BIENVENIDA*/
+h3 {
+  margin: 0 20px;
+  font-size: 14px;
+  color: #9c9c9c;
+  text-align: center;
+}
+
+/*CONTENEDOR DE LAS TARJETAS*/
+.cards-container {
+  display: flex;
+  gap: 30px; /*ESPACIO ENTRE CUADRADOS*/
+  justify-content: center;
+}
+
+/*ESTILO DE CADA TARJETA*/
+/*aquí se toma la class .card utilizado en el contenedor de los 3 cuadrados*/
+.card {
+  width: 230px;
+  min-height: 200px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s, backgound 0.3s; /*TIEMPO QUE DURA EFECTO*/
+}
+
+/*EFECTO AL PASAR EL MOUSE*/
+.card:hover {
+  transform: translateY(-5px); /*HACEN EL EFECTO DE SUBIR*/
+}
+
+/*ÍCONOS DENTRO DE LAS TARJETAS*/
+.card .icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+/*TÍTULOS DE LAS TARJETAS*/
+.card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/*TEXTO DESCRIPTIVO*/
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 700px) {
+  body{
+    padding: 10px;
+  }
+
+  .inicio-container{
+    gap: 20px; /* reduce el espacio entre la imagen y el texto */ 
+    padding-top: 20px; /* espacio arriba para la barra*/
+  }
+
+  .circle {
+    width: 170px;
+    height: 180px;
+    margin-top: 10px; /* espacio arriba para la barra*/
+  }
+
+  /*centrar titulo de aventuras*/
+  .inicio-container h1 {
+    font-size: 1.3em; /* reduce el tamaño del título */
+    padding: 0 10px; /* espacio a los lados */
+    text-align: center;
+    font-family: 'Merriweather', serif;
+  }
+
+  .inicio-container h3 {
+    font-size: 1em; /* reduce el tamaño del título */
+    padding: 0 10px; /* espacio a los lados */
+    text-align: center;
+  }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .card {
+    width: 80vw; /* ocupa el 80% del ancho de la pantalla */
+    min-width: 200px; /* ancho mínimo para que no se vea muy pequeño */
+    max-width: 250px; /* ancho máximo para que no se vea muy grande */
+    height: auto; /* altura automática para ajustarse al contenido */
+  }
+
+  section{
+    height: auto; /* altura automática para ajustarse al contenido */
+    min-width: 80vh; /* ancho mínimo para que no se vea muy pequeño */
+    padding: 30px 0; /* espacio arriba y abajo */
+    flex-direction: column; /* apila en columna */
+  }
+
+  nav{
+    font-size: 20px; /* reduce el tamaño de la fuente en la barra de navegación */
+    padding: 10px; /* reduce el padding en la barra de navegación */
+  }
+
+}
