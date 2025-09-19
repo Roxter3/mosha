@@ -210,22 +210,23 @@ h3 {
   }
 
   .card {
-    width: 80vw; /* ocupa el 80% del ancho de la pantalla */
-    min-width: 200px; /* ancho mínimo para que no se vea muy pequeño */
-    max-width: 250px; /* ancho máximo para que no se vea muy grande */
+    width: 90%; /* ocupa el 90% del ancho de la pantalla */
+    max-width: 320px; /* ancho máximo para que no se vea muy grande */
     margin: 0 auto; /* centra la tarjeta */
   }
 
   section{
+    width: 100%;
     height: auto; /* altura automática para ajustarse al contenido */
-    min-width: 80vh; /* ancho mínimo para que no se vea muy pequeño */
     padding: 30px 0; /* espacio arriba y abajo */
     flex-direction: column; /* apila en columna */
   }
 
   nav{
+    width: 100%;
     font-size: 20px; /* reduce el tamaño de la fuente en la barra de navegación */
     padding: 10px; /* reduce el padding en la barra de navegación */
   }
 
 }
+
