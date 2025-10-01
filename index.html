@@ -8,62 +8,72 @@
   <!-- Enlace al CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-
   <!-- Barra de navegación -->
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#aventuras">Aventuras</a>
-    <a href="#familia">Familia</a>
-    <a href="#sobremoshita">Moshita</a>
+  <nav class="tabs" role="tablist" aria-label="Apartados principales">
+    <button class="tab-btn active" data-section="inicio">Inicio</button>
+    <button class="tab-btn" data-section="aventuras">Aventuras</button>
+    <button class="tab-btn" data-section="familia">Familia</button>
+    <button class="tab-btn" data-section="yopi">Yopi</button>
   </nav>
 
   <!-- Secciones -->
-  <section id="inicio">
-  <div class="inicio-container">
-    <div class="circle">
-      <img src="https://static.wixstatic.com/media/82bd1c_8d04b41c09404635994833d8a52ab208~mv2.jpeg/v1/fill/w_244,h_325,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/82bd1c_8d04b41c09404635994833d8a52ab208~mv2.jpeg" alt="Moshita">
+  <section id="inicio" class="tab-section active">
+    <div class="inicio-container">
+      <div class="circle">
+        <img src="https://static.wixstatic.com/media/82bd1c_8d04b41c09404635994833d8a52ab208~mv2.jpeg/v1/fill/w_244,h_325,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/82bd1c_8d04b41c09404635994833d8a52ab208~mv2.jpeg" alt="Moshita">
+      </div>
+      <h1>🐾 Las Aventuras de Moshita 🐾</h1>
+      <h3>Bienvenidos al increíble mundo mágico de Moshita,<br>
+          donde cada paseo es una nueva aventura llena de alegría, juegos y momentos inolvidables.</h3>
     </div>
-    <h1>🐾 Las Aventuras de Moshita 🐾</h1>
-    <h3>Bienvenidos al increible mundo mágico de Moshita,donde cada paseo es una nueva<br>
-        aventura llena de alegría, juegos y momentos inolvidables.</h3>
-  </div>
-</section>
+  </section>
 
-<!--CONTENEDOR DE CUADRADOS-->
-<div class="cards-container">
-  <div class="card"><!--CAJA DE LA CÁMARA-->
-    <div class="icon">📷</div>
+  <!-- CONTENEDOR DE CUADRADOS -->
+  <div class="cards-container tab-section active" id="cards-inicio">
+    <div class="card">
+      <div class="icon">📷</div>
+      <h2>Aventuras</h2>
+      <p>Explora todos los lugares increíbles que he visitado</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">❤️</div>
+      <h2>Familia</h2>
+      <p>Momentos especiales y divertidos con mi familia</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👤</div>
+      <h2>Yopi</h2>
+      <p>Conoce más sobre mi personalidad y mis gustos favoritos</p>
+    </div>
+  </div>
+
+  <section id="aventuras" class="tab-section">
     <h2>Aventuras</h2>
-    <p>Explora todos los lugres increíbles que he visitado</p>
-  </div>
+    <p>Explora todos los lugares increíbles que he visitado</p>
+  </section>
 
-  <div class="card"><!--CAJA DE LA CORAZON-->
-    <div class="icon">❤️</div>
+  <section id="familia" class="tab-section">
     <h2>Familia</h2>
     <p>Momentos especiales y divertidos con mi familia</p>
-  </div>
+  </section>
 
-  <div class="card"><!--CAJA DE LA YO-->
-    <div class="icon">👤</div>
+  <section id="yopi" class="tab-section">
     <h2>Yopi</h2>
-    <p>Conoce más sobre mi personalidad y mis gustos favoritos</p>
-  </div>
-</div>
-
-  <section id="aventuras">
-    <h1>Aventuras</h1>
+    <p>Conoce más sobre mi personalidad y mis gustos favoritos</p>  
   </section>
 
-  <section id="familia">
-    <h1>Familia</h1>
-  </section>
-
-  <section id="sobremoshita">
-    <h1>Sobre Moshita</h1>
-  </section>
+  <footer>
+    <p>🐾 Las Aventuras de Moshita 🐾</p><br>
+    <h4>Creado con mucho amor para documentar las increíbles aventuras de nuestra querida Moshita</h4>
+    <div class="redes">
+      <a href="https://www.instagram.com/moshita.06?igsh=ZjN3ZzJpeHY3ZHdo" class="fa fa-instagram"></a>
+    </div>
+  </footer>
 
   <!-- Enlace al JS -->
   <script src="js/main.js"></script>
