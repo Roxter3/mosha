@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #ffe5c4; /* color de la pagina */
 }
 
 /* Barra de navegación */
@@ -37,18 +38,6 @@ section {
   align-items: center; /* centra verticalmente */
 }
 
-#inicio {
-  background: #ffefda;
-}
-#aventuras {
-  background: #ffefda;
-}
-#familia {
-  background: #ffefda;
-}
-#sobremoshita {
-  background: #ffefda;
-}
 
 .circle {
   width: 250px;
@@ -57,7 +46,7 @@ section {
   border-radius: 50%;
   overflow: hidden;
   background: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
 }
 
 /*IMAGEN DENTRO DEL CIRCULO*/
@@ -142,7 +131,7 @@ h3 {
   body {
     padding: 0;
     margin: 0;
-    background: #ffefda;
+    background: #f7e3c9;
   }
 
   nav {
@@ -229,4 +218,71 @@ h3 {
     padding: 10px; /* reduce el padding en la barra de navegación */
   }
 
+  .tab-section {
+    display: none;
+  }
+  .tab-section.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* PIE DE PÁGINA */
+footer {
+  background-color: #90a8eb; /* azul */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 90px;
+}
+
+footer p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;   /* tamaño más grande */
+  font-weight: bold; /* en negrita */
+  margin: 0;         /* quita márgenes por defecto */
+}
+
+/* Segunda línea (más pequeña) */
+footer h4 {
+  font-family: Arial, sans-serif;
+  font-size: 14px;   /* más pequeño */
+  font-weight: normal;
+  margin: 5px 0 0 0; /* un poco de espacio arriba */
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: #1f2937;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background 0.2s;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background: #374151;
+}
+
+
+/* Ocultar todas las secciones por defecto */
+.tab-section {
+  display: none;
+}
+
+/* Mostrar solo la activa */
+.tab-section.active {
+  display: flex;
+  flex-direction: column;
 }
