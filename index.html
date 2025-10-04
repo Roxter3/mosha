@@ -12,70 +12,79 @@
 </head>
 <body>
   <!-- Barra de navegación -->
-  <nav class="tabs" role="tablist" aria-label="Apartados principales">
+  <nav class="tabs" role="tablist">
     <button class="tab-btn active" data-section="inicio">Inicio</button>
     <button class="tab-btn" data-section="aventuras">Aventuras</button>
     <button class="tab-btn" data-section="familia">Familia</button>
     <button class="tab-btn" data-section="yopi">Yopi</button>
   </nav>
 
-  <!-- Secciones -->
+  <!-- Sección Inicio -->
   <section id="inicio" class="tab-section active">
     <div class="inicio-container">
       <div class="circle">
         <img src="https://static.wixstatic.com/media/82bd1c_8d04b41c09404635994833d8a52ab208~mv2.jpeg/v1/fill/w_244,h_325,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/82bd1c_8d04b41c09404635994833d8a52ab208~mv2.jpeg" alt="Moshita">
       </div>
       <h1>🐾 Las Aventuras de Moshita 🐾</h1>
-      <h3>Bienvenidos al increíble mundo mágico de Moshita,<br>
-          donde cada paseo es una nueva aventura llena de alegría, juegos y momentos inolvidables.</h3>
+      <h3>
+        Bienvenidos al increíble mundo mágico de Moshita,<br>
+        donde cada paseo es una nueva aventura llena de alegría, juegos y momentos inolvidables.
+      </h3>
+    </div>
+
+    <!-- Tarjetas dentro de la sección Inicio -->
+    <div class="cards-container">
+      <div class="card">
+        <div class="icon">📷</div>
+        <h2>Aventuras</h2>
+        <p>Explora todos los lugares increíbles que he visitado</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">❤️</div>
+        <h2>Familia</h2>
+        <p>Momentos especiales y divertidos con mi familia</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">👤</div>
+        <h2>Yopi</h2>
+        <p>Conoce más sobre mi personalidad y mis gustos favoritos</p>
+      </div>
     </div>
   </section>
 
-  <!-- CONTENEDOR DE CUADRADOS -->
-  <div class="cards-container tab-section active" id="cards-inicio">
-    <div class="card">
-      <div class="icon">📷</div>
-      <h2>Aventuras</h2>
-      <p>Explora todos los lugares increíbles que he visitado</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">❤️</div>
-      <h2>Familia</h2>
-      <p>Momentos especiales y divertidos con mi familia</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">👤</div>
-      <h2>Yopi</h2>
-      <p>Conoce más sobre mi personalidad y mis gustos favoritos</p>
-    </div>
-  </div>
-
+  <!-- Sección Aventuras -->
   <section id="aventuras" class="tab-section">
     <h2>Aventuras</h2>
     <p>Explora todos los lugares increíbles que he visitado</p>
   </section>
 
+  <!-- Sección Familia -->
   <section id="familia" class="tab-section">
     <h2>Familia</h2>
     <p>Momentos especiales y divertidos con mi familia</p>
   </section>
 
+  <!-- Sección Yopi -->
   <section id="yopi" class="tab-section">
     <h2>Yopi</h2>
     <p>Conoce más sobre mi personalidad y mis gustos favoritos</p>  
   </section>
 
+  <!-- Pie de página -->
   <footer>
     <p>🐾 Las Aventuras de Moshita 🐾</p><br>
     <h4>Creado con mucho amor para documentar las increíbles aventuras de nuestra querida Moshita</h4>
     <div class="redes">
-      <a href="https://www.instagram.com/moshita.06?igsh=ZjN3ZzJpeHY3ZHdo" class="fa fa-instagram"></a>
+      <a href="https://www.instagram.com/moshita.06?igsh=ZjN3ZzJpeHY3ZHdo" target="_blank" class="instagram-link">
+        <i class="fab fa-instagram"></i> moshita.06
+      </a>
     </div>
   </footer>
 
   <!-- Enlace al JS -->
   <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
 </body>
 </html>
