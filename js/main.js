@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
       // Ocultar todas las secciones
       sections.forEach(sec => sec.classList.remove("active"));
 
+      sections.forEach(sec => sec.classList.remove("active"));
+      document.getElementById("cards-inicio").classList.remove("active");
+
       // Mostrar la sección correspondiente
       const target = btn.getAttribute("data-section");
       document.getElementById(target).classList.add("active");
@@ -22,3 +25,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
